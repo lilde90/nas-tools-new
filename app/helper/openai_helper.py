@@ -100,7 +100,7 @@ class OpenAiHelper:
                     }
                 ]
         return openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="step-2-mini",
             user=user,
             messages=message,
             **kwargs
