@@ -288,6 +288,14 @@
                          id="openai.api_key" placeholder="sk-xxx" autocomplete="off">
                 </div>
               </div>
+              <div class="col-lg">
+                <div class="mb-3">
+                  <label class="form-label">OpenAI API Model Name <span class="form-help"
+                                                                        title="调用的模型名称"
+                                                                        data-bs-toggle="tooltip">?</span></label>
+                  <input type="text" value="{% if Config.openai %}{{ Config.openai.model_name or '' }}{% endif %}" class="form-control"
+                         id="openai.model_name" placeholder="sk-xxx" autocomplete="off">
+                </div>
             </div>
             <div class="row">
               <div class="col-lg">
